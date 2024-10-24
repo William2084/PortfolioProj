@@ -46,24 +46,24 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #3498db; /* Hover color */
+  color: #3498db; 
 }
 
 
 .btn {
   display: inline-block;
-  background-color: #FF6B6B; /* Soft red background */
+  background-color: #FF6B6B; 
   padding: 10px 20px;
-  border-radius: 20px; /* Rounded corners */
+  border-radius: 20px; 
   text-align: center;
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-top: 15px; /* Light shadow for depth */
+  margin-top: 15px; 
 }
 
 .btn a {
-  padding: 5px 5px; /* Space inside the button */
-  color: white; /* Text color */
+  padding: 5px 5px; 
+  color: white; 
   text-align: center;
   font-size: 13px;
   font-weight: bold;
@@ -72,7 +72,7 @@ nav {
 }
 
 .btn:hover {
-  background-color: #FF4C4C; /* Darker color on hover */
+  background-color: #FF4C4C; 
 }
 
 section {
@@ -236,7 +236,6 @@ footer p {
   margin: 0;
 }
 
-/* Global Styles */
 * {
   margin: 0;
   padding: 0;
