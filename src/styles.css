@@ -236,6 +236,15 @@ footer p {
   margin: 0;
 }
 
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Header Navigation */
 @media (max-width: 768px) {
   .nav-links {
     flex-direction: column;
@@ -248,39 +257,58 @@ footer p {
     text-align: center;
   }
 
-  nav .logo {
-    margin-right: auto;
+  nav.active .nav-links {
+    display: flex;
   }
 
   nav {
     flex-direction: column;
     align-items: flex-start;
   }
+}
 
-  nav.active .nav-links {
-    display: flex;
-  }
-
-  /* Home Section */
+/* Home Section */
+@media (max-width: 768px) {
   .home {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+    flex-direction: column;
     text-align: center;
   }
 
   .home-content {
+    max-width: 100%;
+    margin-left: 0;
     padding: 20px;
   }
 
   .homei img {
     max-width: 80%;
+    margin-right: 0;
   }
 }
 
+/* About Me Section */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .abouti img {
+    max-width: 80%;
+    margin-left: 0;
+  }
+
+  .about-content {
+    max-width: 100%;
+    margin-right: 0;
+    padding: 20px;
+  }
+}
+
+/* For larger screens */
 @media (min-width: 769px) {
   .home {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
@@ -292,82 +320,17 @@ footer p {
   .homei img {
     max-width: 40%;
   }
-}
 
-/* About Section */
-.about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.abouti img {
-  max-width: 100%;
-}
-
-@media (min-width: 769px) {
   .about {
     flex-direction: row;
     text-align: left;
   }
 
-  .about-content {
-    max-width: 50%;
-    margin-left: 20px;
-  }
-
   .abouti img {
     max-width: 40%;
   }
-}
 
-/* Projects Section */
-.projects {
-  display: flex;
-  flex-direction: column;
-}
-
-.project-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.project-item img {
-  max-width: 100%;
-  margin-bottom: 10px;
-}
-
-@media (min-width: 769px) {
-  .project-list {
-    flex-direction: row;
-    justify-content: space-between;
+  .about-content {
+    max-width: 50%;
   }
-
-  .project-item {
-    width: 30%;
-  }
-}
-
-/* Contact Section */
-.contact form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.contact .btn {
-  text-align: center;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #333;
-  color: white;
-  position: relative;
-  bottom: 0;
-  width: 100%;
 }
